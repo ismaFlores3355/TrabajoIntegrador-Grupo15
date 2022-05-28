@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<link rel="stylesheet" type="text/css"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Votacion 2022</title>
+</head>
+<body>
+
+	<header th:replace="layouts/header::header"></header>
+	<div class="container margen-index">
+		<div class="row">
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="images/Shakira.jpg" class="card-img-top img-altura"
+						alt="FotoShakira">
+					<div class="card-body">
+						<h5 class="card-title">Shakira</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit, sed do eiusmod tempor incididunt</p>
+						<a href="#" class="btn btn-primary">Votar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="images/EdSheeran.jpg" class="card-img-top  img-altura"
+						alt="FotoEdSheeran">
+					<div class="card-body">
+						<h5 class="card-title">Ed Sheeran</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit, sed do eiusmod tempor incididunt</p>
+						<a href="#" class="btn btn-primary">Votar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="images/ArianaGrande.jpg" class="card-img-top  img-altura"
+						alt="FotoArianaGrande">
+					<div class="card-body">
+						<h5 class="card-title">Ariana Grande</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit, sed do eiusmod tempor incididunt</p>
+						<a href="#" class="btn btn-primary">Votar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="images/Niguno.jpg" class="card-img-top img-altura"
+						alt="FotoNinguno">
+					<div class="card-body">
+						<h5 class="card-title">Ninguno</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit, sed do eiusmod tempor incididunt</p>
+						<a href="#" class="btn btn-primary">Votar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer th:replace="/layouts/footer::footer"></footer>
+	<script src="/webjars/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="/webjars/popper.js/umd/popper.min.js"
+		type="text/javascript"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"
+		type="text/javascript"></script>
+</body>
+</html>
