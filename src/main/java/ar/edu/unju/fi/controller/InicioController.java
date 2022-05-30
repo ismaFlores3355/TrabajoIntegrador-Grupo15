@@ -13,4 +13,8 @@ public class InicioController {
 	public String getIncioPage(Model model) {
 		return "index";
 	}
+	@GetMapping("/saludo")
+	public String getSaludoPage(Model model) {
+		return "saludo";
+	}
 }
