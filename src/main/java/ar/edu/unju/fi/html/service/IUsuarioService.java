@@ -11,6 +11,5 @@ public interface IUsuarioService {
 	public void modificarUsuario(Usuario usuario);
 	public void eliminarUsuario(int dni);
 	public ListaUsuario getListaUsuario();
-	
 
 }

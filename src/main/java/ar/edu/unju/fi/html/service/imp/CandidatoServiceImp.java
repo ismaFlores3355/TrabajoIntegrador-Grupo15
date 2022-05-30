@@ -11,15 +11,12 @@ import ar.edu.unju.fi.html.service.ICandidatoService;
 
 import ar.edu.unju.fi.html.util.ListaCandidato;
 
-
-
 @Service("CandidatoServiceImpList")
 public class CandidatoServiceImp implements ICandidatoService {
   
 	
 	@Autowired
 	private ListaCandidato listaCandidato;
-	
 	
 	
 	@Override

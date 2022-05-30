@@ -24,8 +24,6 @@ public class Usuario {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate fechanacim;
 	
-	
-	
 	public Usuario(
 			@Size(min = 3, max = 100, message = "El nombre debe tener entre 3 a 100 caracteres") @NotEmpty(message = "El nombre del alumno no puede ser vacío") String nombre,
 			@NotEmpty @Email String email, @NotEmpty(message = "El teléfono no puede ser vacío") String telefono,
@@ -35,10 +33,7 @@ public class Usuario {
 		this.email = email;
 		this.telefono = telefono;
 		this.fechanacim = fechanacim;
-	}
-	
-	
-	
+	}	
 	
 	public Usuario() {
 		super();
