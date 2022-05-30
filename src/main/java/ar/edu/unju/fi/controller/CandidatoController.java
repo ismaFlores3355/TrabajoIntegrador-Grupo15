@@ -27,7 +27,6 @@ public class CandidatoController {
 
 	private ICandidatoService candidatoService;
 	
-	
 	private static final Log LOGGER = LogFactory.getLog(CandidatoController.class);
 	
 	@GetMapping("/nuevo")
@@ -99,7 +98,6 @@ public class CandidatoController {
 		
 	}
 	
-	
 	@GetMapping("/votar/{codigo}")
 	public ModelAndView getVotarCandidatoPage(@PathVariable(value="codigo")int codigo) {
 		candidatoService.votarCandidato(codigo);
@@ -117,21 +115,5 @@ public class CandidatoController {
 		return mav;
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

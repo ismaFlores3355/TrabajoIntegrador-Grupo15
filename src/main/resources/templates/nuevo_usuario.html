@@ -11,10 +11,11 @@
 		<header th:replace="/layouts/header :: header"></header>
 		<div class="container col-4">
 			<br>
-			<p class="h4">Alta de Usuario</p>
+			<p class="h4">Alta de Votante</p>
 			<br>
 	
 			<form th:action="@{/usuario/guardar}" method="POST" th:object="${usuario}">
+			
 				
 				<div class="mb-3">
 					<label for="nombresId" class="form-label">Nombres</label> 
@@ -28,18 +29,14 @@
 					<div class="text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
 				</div>
 				<div class="mb-3">
-					<label for="telefonoId" class="form-label">Teléfono</label> 
-					<input th:field="*{telefono}" type="text" class="form-control" id="telefonoId" placeholder="Ingrese telefono">
-					<div class="text-danger" th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}"></div>
-				</div>
-				<div class="mb-3">
 					<label for="fechaId" class="form-label">Fecha de Nacimiento</label> 
 					<input th:field="*{fechanacim}" type="date" class="form-control" id="fechaId" placeholder="Ingrese fecha de nac">
 					
 				</div>
+					<input type="hidden" th:field="*{telefono}" th:value="12345678" >
 				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 					<button class="btn btn-primary me-md-2" type="submit">Enviar</button>
-					 <a th:href="@{/inicio}" id="cancel" class="btn btn-secondary">Cancelar</a>		
+					 <a th:href="@{/pagina/inicio}" id="cancel" class="btn btn-secondary">Cancelar</a>		
 				</div>
 			</form>
 		</div>

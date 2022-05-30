@@ -22,8 +22,10 @@ public class ListaCandidato {
 	public ListaCandidato() {
 		
 		candidatos = new ArrayList<Candidato>();
-		candidatos.add(new Candidato(12345567,"bobo","cumbia","muy bueno",0));
-		candidatos.add(new Candidato(45454324,"ninguno","ninguno","ninguno",0));
+		candidatos.add(new Candidato(1,"Shakira","pop","muy bueno",0));
+		candidatos.add(new Candidato(2,"Ed Sheeran","pop","regular",0));
+		candidatos.add(new Candidato(3,"Ariana Grande","pop","regular",0));
+		candidatos.add(new Candidato(4,"Ninguno","-","-",0));
 	}
 	
 }

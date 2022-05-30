@@ -38,17 +38,14 @@
 					<div class="text-danger" th:if="${#fields.hasErrors('detalle')}" th:errors="*{detalle}"></div>
 				</div>
 				
-				
-				
-				
 				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 					<button class="btn btn-primary me-md-2" type="submit">Enviar</button>
-					 <a th:href="@{/inicio}" id="cancel" class="btn btn-secondary">Cancelar</a>
+					 <a th:href="@{/pagina/inicio}" id="cancel" class="btn btn-secondary">Cancelar</a>
 	  				
 				</div>
 			</form>
 		</div>
-		<br><br>
+		<br>
 		<footer th:replace="/layouts/footer :: footer"></footer>
 		<script type="text/javascript" th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script>
 		<script type="text/javascript" th:src="@{/webjars/popper.js/2.9.3/umd/popper.min.js}"></script>

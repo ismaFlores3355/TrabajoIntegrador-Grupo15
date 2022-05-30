@@ -19,7 +19,7 @@ public class Usuario {
 	private String nombre;
 	@NotEmpty @Email
 	private String email;
-	@NotEmpty(message="El teléfono no puede ser vacío")
+	//@NotEmpty(message="El teléfono no puede ser vacío")
 	private String telefono;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate fechanacim;
