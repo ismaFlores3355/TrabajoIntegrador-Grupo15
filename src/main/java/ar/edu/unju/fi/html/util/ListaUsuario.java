@@ -13,8 +13,6 @@ public class ListaUsuario {
   
 	private ArrayList<Usuario> usuarios;
 
-	
-	
 	public ListaUsuario() {
 		// crear el arrayList
 		usuarios = new ArrayList<Usuario>();
@@ -23,12 +21,6 @@ public class ListaUsuario {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
 	public ArrayList<Usuario> getUsuarios() {
 		return usuarios;
 	}
@@ -36,9 +28,5 @@ public class ListaUsuario {
 	public void setUsuarios(ArrayList<Usuario> usuarios) {
 		this.usuarios = usuarios;
 	}
-	
-	
-	
-	
 	
 }

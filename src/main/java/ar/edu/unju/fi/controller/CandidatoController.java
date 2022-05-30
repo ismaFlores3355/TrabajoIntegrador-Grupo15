@@ -100,8 +100,6 @@ public class CandidatoController {
 	}
 	
 	
-	
-	
 	@GetMapping("/votar/{codigo}")
 	public ModelAndView getVotarCandidatoPage(@PathVariable(value="codigo")int codigo) {
 		candidatoService.votarCandidato(codigo);

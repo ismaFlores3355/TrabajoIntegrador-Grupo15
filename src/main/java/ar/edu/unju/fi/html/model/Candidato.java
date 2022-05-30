@@ -1,6 +1,5 @@
 package ar.edu.unju.fi.html.model;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
@@ -24,16 +23,6 @@ public class Candidato {
 	//@Min(value=1,message="El voto debe ser mayor o igual a 1")
 	
 	private int votos;
-	
-	private int porcentaje;
-	
-	private int total;
-	
-	
-	
-	
-	
-	
 	
 	
 	public Candidato() {
@@ -80,14 +69,5 @@ public class Candidato {
 	public void setVotos(int votos) {
 		this.votos = votos;
 	}
-
-
-
-
-
-
-
-
-
 
 }

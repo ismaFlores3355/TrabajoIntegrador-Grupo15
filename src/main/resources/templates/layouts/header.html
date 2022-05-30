@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
-	</head>
-	
-	<body>
-		<header id="header-principal" th:fragment="header">
-			 <img src="/images/header.jpg" class="img-ajuste">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="user-scalable=no, width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<link rel="stylesheet" type="text/css"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+<body>
+	<header id="header-principal" th:fragment="header">
+		<img src="/images/header.jpg" class="img-ajuste">
 		<!-- Barra de navegacion -->
 		<nav
 			class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
@@ -19,21 +22,11 @@
 				</button>
 				<div id="MenuNavegacion" class="collapse navbar-collapse">
 					<ul class="navbar-nav ms-3">
-						<li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
-						
-						
-						<li><a class="dropdown-item" th:href="@{/usuario/listaUsuarios}">Usuarios</a></li>
-				              <li><a class="dropdown-item" th:href="@{/candidato/listaCandidatos}">Candidatos</a></li>
-						
-						
-						
-						
-						
-						
-						
-						
-						<li class="nav-item"><a class="nav-link" th:href="@{/usuario/listaUsuarios}">Lista Candidato</a></li>
-						
+						<li class="nav-item"><a class="nav-link" href="@{/pagina/inicio}">Inicio</a></li>
+						<li><a class="dropdown-item"
+							th:href="@{/usuario/listaUsuarios}">Usuarios</a></li>
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/candidato/listaCandidatos}">Lista Candidato</a></li>
 						<li class="nav-item"><a class="nav-link" href="">Votantes</a></li>
 						<li class="nav-item"><a class="nav-link" href="">Estado
 								Actual</a></li>
@@ -42,11 +35,13 @@
 			</div>
 		</nav>
 		<br>
-		
-		</header>
-		
-		<script th:href="@{/webjars/jquery/jquery.min.js}" type="text/javascript"></script>
-		<script th:href="@{/webjars/popper.js/umd/popper.min.js}" type="text/javascript"></script>
-		<script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" type="text/javascript"></script>
-	</body>
+	</header>
+
+	<script th:href="@{/webjars/jquery/jquery.min.js}"
+		type="text/javascript"></script>
+	<script th:href="@{/webjars/popper.js/umd/popper.min.js}"
+		type="text/javascript"></script>
+	<script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}"
+		type="text/javascript"></script>
+</body>
 </html>

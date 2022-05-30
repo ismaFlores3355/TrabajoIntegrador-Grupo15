@@ -31,9 +31,7 @@ public class UsuarioController {
 	
 	@GetMapping("/nuevo")
 	public String getFormNuevoUsuarioPage(Model model) {
-		
 		model.addAttribute("usuario", usuarioService.getUsuario());
-		
 		return "nuevo_usuario";
 	 }
 	
@@ -63,10 +61,4 @@ public class UsuarioController {
 		mav.addObject("usuarios",usuarioService.getListaUsuario().getUsuarios());
 		return mav;
 	}
-	
-	
-	
-	
-	
-
 }
