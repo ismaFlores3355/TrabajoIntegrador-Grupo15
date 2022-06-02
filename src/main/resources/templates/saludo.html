@@ -12,8 +12,9 @@
 <body>
 	
 	<header th:replace="/layouts/header :: header"></header>
-		<div class="text-margin">
-			<p class="text-primary text-tam">Gracias por votar</p>
+		<div class="text-margin  margen-index">
+			<p class="text-primary ">Gracias por votar</p>
+		    <a th:href="@{/candidato/listaCandidatos}" id="votarCandidato" class="btn btn-success">Volver</a>
 		</div>
 	
 	<footer th:replace="/layouts/footer :: footer"></footer>

@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 
 public class Candidato {
     
-	@Min(value=1000000,message="El DNI debe ser mayor o igual a 1.000.000")
+	//@Min(value=1000000,message="El DNI debe ser mayor o igual a 1.000.000")
 	private int codigo;
 	
 	@Size(min=3, max=100, message="El nombre debe tener entre 3 a 100 caracteres")
