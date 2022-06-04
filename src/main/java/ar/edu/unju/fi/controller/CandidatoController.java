@@ -21,7 +21,7 @@ import ar.edu.unju.fi.html.service.ICandidatoService;
 @Controller
 @RequestMapping("/candidato")
 public class CandidatoController {
-	public int cont=0;
+	private int cont=0;
 	@Autowired
 	@Qualifier("CandidatoServiceImpList")
 
@@ -31,9 +31,7 @@ public class CandidatoController {
 	
 	@GetMapping("/nuevo")
 	public String getFormNuevoCandidatoPage(Model model) {
-		
 		model.addAttribute("candidato", candidatoService.getCandidato());
-		
 		return "nuevo_candidato";
 	}
 	
@@ -97,19 +95,21 @@ public class CandidatoController {
 		return mav;
 		
 	}
-	//cuando en contador llega a 3 llama a la pagina nuevo usuario, asi permite solo 3 votos
+	
+	//cuando el contador llega a 3 llama a la pagina nuevo usuario, asi permite solo 3 votos
 	
 	@GetMapping("/votar/{codigo}")
 	public ModelAndView getVotarCandidatoPage(@PathVariable(value="codigo")int codigo) {
 		
 		if(cont==3) {
-			ModelAndView miv = new ModelAndView("redirect:/usuario/nuevo");
+		  ModelAndView miv = new ModelAndView("redirect:/usuario/nuevo");
 		  cont=0;
 		  return miv;
 		}
 		else {
 		cont++;
 		//el tipo mev dirige a ala pagina saludo para mostrar "Gracias por votar"
+		
 		candidatoService.votarCandidato(codigo);
 		ModelAndView mav = new ModelAndView("lista_candidatos");
 		ModelAndView mev = new ModelAndView("saludo");

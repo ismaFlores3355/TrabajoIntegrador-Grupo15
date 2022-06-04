@@ -46,7 +46,7 @@ public class UsuarioController {
 			mav.addObject("usuario", usuario);
 			return mav;
 		}
-		ModelAndView mav = new ModelAndView("redirect:/usuario/listaUsuarios");
+		ModelAndView mav = new ModelAndView("redirect:/candidato/listaCandidatos");
 		
 		//agrego un objeto alumno a la lista
 		if(usuarioService.guardarUsuario(usuario)) {
